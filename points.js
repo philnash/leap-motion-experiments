@@ -32,6 +32,9 @@
     for (i=0, len=frame.pointables.length; i<len; i++) {
       // get the pointable and its position
       pos = frame.pointables[i].tipPosition;
+      // define x and y co-ordinates
+      pos.x = pos[0];
+      pos.y = pos[1];
 
       // add the position data to our data array
       data.push(pos);
